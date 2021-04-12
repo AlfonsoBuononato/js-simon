@@ -8,9 +8,9 @@ $(document).ready(function(){
     var vincita = $(".vincita");
     
     //VARIABILI NUMERI
-    var numeriCasuali = [ ];
-    var numeriInseriti = [ ];
-    var numeriIndovinati = [ ];
+    var numeriCasuali = [];
+    var numeriInseriti = [];
+    var numeriIndovinati = [];
     
     //LOOP PER GENERARE NUMERI RANDOM UNIVOCI
 
