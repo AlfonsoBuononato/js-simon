@@ -15,11 +15,12 @@ $(document).ready(function(){
     //LOOP PER GENERARE NUMERI RANDOM UNIVOCI
 
     for(i = 0; i < 5; i++){
-      genRandom = Math.floor(Math.random()*10)+1;
 
-      if(! numeriCasuali.includes(genRandom)){
-          numeriCasuali.push(genRandom);
-      }
+        var genRandom = Math.floor(Math.random()*10)+1;
+        // CONDIZIONE PER AVERE SOLO NUMERI UNIVOCI
+        if(! numeriCasuali.includes(genRandom)){
+            numeriCasuali.push(genRandom);
+        }
     }
     
     alert(numeriCasuali);
