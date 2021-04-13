@@ -16,13 +16,13 @@ $(document).ready(function(){
 
     for(i = 0; i < 5; i++){
 
-        var genRandom = Math.floor(Math.random()*10)+1;
+        var genRandom = Math.floor(Math.random()*100)+1;
         // CONDIZIONE PER AVERE SOLO NUMERI UNIVOCI
         if(! numeriCasuali.includes(genRandom)){
             numeriCasuali.push(genRandom);
         }
     }
-    
+    // NUMERII DA INDOVINARE
     alert(numeriCasuali);
     console.log(numeriCasuali);
     
@@ -35,7 +35,7 @@ $(document).ready(function(){
             console.log(numeriUtente);
 
             //VALIDAZIONI INSERIMENTO NUMERO
-            while(isNaN(numeriUtente) || numeriUtente < 1 || numeriUtente >10 || numeriInseriti.includes(numeriUtente)){
+            while(isNaN(numeriUtente) || numeriUtente < 1 || numeriUtente >100 || numeriInseriti.includes(numeriUtente)){
                 var numeriUtente  = parseInt(prompt("Devi inserire uno dei numeri da indovinare."));
             }
             //NUMERI INSERITI DA AGGIUNGERE ALL ARRAY 
